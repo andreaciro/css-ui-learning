@@ -1,0 +1,58 @@
+# CSS Properties Structured Notes
+
+## 1. Appearance Property
+- Controls the styling of UI elements like buttons and inputs.
+- Common values: `none`, `auto`, `button`, etc.
+
+## 2. Pseudo-Classes
+### :checked
+- Styles the selected option in checkboxes and radio buttons.
+- Example: `input:checked { background-color: blue; }`
+
+### :disabled
+- Styles elements that are disabled and cannot be interacted with.
+- Example: `input:disabled { opacity: 0.5; }`
+
+### :focus
+- Styles elements when they receive focus (keyboard navigation).
+- Example: `input:focus { outline: 2px solid blue; }`
+
+### :hover
+- Styles elements when the mouse hovers over them.
+- Example: `button:hover { background-color: lightgray; }`
+
+## 3. Box Model Properties
+- **Content**: The actual content of the box, where text and images appear.
+- **Padding**: Space between the content and the border.
+- **Border**: A line surrounding the padding (if any) and content.
+- **Margin**: Space outside the border, separating the box from other boxes.
+
+## 4. Background Properties
+- `background-color`: Sets the background color.
+- `background-image`: Sets an image as the background.
+- `background-size`: Defines the size of the background images (e.g., `cover`, `contain`).
+
+## 5. Transitions
+- Enables animated transitions between property changes.
+- Example: `transition: all 0.3s ease;`
+
+## 6. Box Shadow
+- Adds shadow effects around an element.
+- Example: `box-shadow: 2px 2px 5px gray;`
+
+## 7. Cursor Property
+- Changes the mouse cursor when hovering over an element.
+- Example: `cursor: pointer;` for buttons.
+
+## 8. Opacity
+- Controls the transparency level of an element.
+- Example: `opacity: 0.5;` creates a semi-transparent effect.
+
+## 9. Responsive Design
+- Utilize media queries to adapt styles based on screen size.
+- Example: `@media (max-width: 600px) { ... }`
+
+## 10. Accessibility Considerations
+- Ensure sufficient color contrast between text and background.
+- Use semantic HTML elements that describe the content accurately.
+- Make elements navigable using the keyboard for those unable to use a mouse.

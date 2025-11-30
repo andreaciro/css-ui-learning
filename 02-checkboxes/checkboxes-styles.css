@@ -1,0 +1,53 @@
+.checkbox {
+  /* Basic reset for checkboxes */
+  appearance: none; /* Remove default checkbox appearance */
+  width: 20px; /* Set width of the checkbox */
+  height: 20px; /* Set height of the checkbox */
+  border: 2px solid #ccc; /* Add border for unselected state */
+  border-radius: 4px; /* Rounded corners for a modern look */
+  outline: none; /* Remove outline on focus for custom styles */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+.checkbox:checked {
+  /* Styles for the checked state */
+  background-color: #007bff; /* Set background color on check */
+  border-color: #007bff; /* Change border color on check */
+  position: relative; /* Position for the checkmark */
+}
+
+.checkbox:checked::after {
+  /* Checkmark icon using SVG */
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Position absolute to align the checkmark */
+  top: 2px; /* Position from the top */
+  left: 2px; /* Position from the left */
+  width: 14px; /* Width of checkmark */
+  height: 14px; /* Height of checkmark */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" fill="white"><path d="M4.5 8l2.5 2.5L12.5 4" stroke="white" stroke-width="2" fill="none"/></svg>'); /* Checkmark SVG */
+}
+
+.checkbox:focus {
+  /* Focus state for accessibility */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+.checkbox:disabled {
+  /* Styles for disabled state */
+  cursor: not-allowed; /* Change cursor to indicate unavailability */
+  opacity: 0.6; /* Slightly transparent to indicate disability */
+}
+
+.checkbox:hover {
+  /* Hover effects */
+  border-color: #007bff; /* Change border color on hover */
+}
+
+@media (max-width: 600px) {
+  /* Responsive design for mobile screens */
+  .checkbox {
+    width: 18px; /* Smaller width on mobile */
+    height: 18px; /* Smaller height on mobile */
+  }
+}
